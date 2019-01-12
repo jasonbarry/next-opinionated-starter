@@ -1,4 +1,5 @@
+*.log
 .env
+.eslintcache
 .next
 node_modules
-*.log

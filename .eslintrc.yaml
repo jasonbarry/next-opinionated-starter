@@ -35,7 +35,6 @@ rules:
   - error
   - packageDir: ./ # need to specify monorepo root
   import/prefer-default-export: 0 # this rule is getting in the way of consistency for some API libraries
-  indent: 0 # indentation handled by prettier
   jsx-a11y/anchor-is-valid: 0 # ignore trying to force buttons instead of anchors
   jsx-a11y/click-events-have-key-events: 0 # too hard
   jsx-a11y/img-has-alt: 0 # eslint-plugin-jsx-a11y 5.0 seems to need this
@@ -60,8 +59,6 @@ rules:
   react/display-name: 0 # annoying
   react/forbid-prop-types: 1 # only warn for things like specifying objects as react proptypes
   react/jsx-filename-extension: 0
-  react/jsx-indent-props: 0 # indentation handled by prettier
-  react/jsx-indent: 0 # indentation handled by prettier
   react/jsx-no-bind: 1 # binding functions in render statements is bad for performance
   react/jsx-no-target-blank: 0 # this isn't as big of a security risk as eslint makes it seem
   react/jsx-one-expression-per-line: 0 # nah
@@ -78,7 +75,6 @@ rules:
   - ignore:
     - class
     - for
-  react/no-unsafe: 0 # avoid deprecated lifecycle methods
   react/require-default-props: 0
   react/prefer-stateless-function: 1 # warn when component without lifecycle methods is not pure
   react/sort-comp: # order of component lifecycle methods doesn't matter

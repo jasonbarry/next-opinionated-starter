@@ -1,5 +1,5 @@
 module.exports = api => {
-  api.cache(true);
+  api.cache(true)
   return {
     presets: ['next/babel', '@babel/preset-flow'],
     plugins: [
@@ -8,15 +8,15 @@ module.exports = api => {
         {
           root: ['./'],
           alias: {
-            API: './app/src/api',
-            Components: './app/src/components',
-            Interfaces: './app/src/interfaces',
-            Utils: './app/src/utils',
+            API: './src/api',
+            Components: './src/components',
+            Interfaces: './src/interfaces',
+            Utils: './src/utils',
           },
         },
       ],
       'react-html-attrs',
       '@babel/transform-flow-strip-types',
     ],
-  };
-};
+  }
+}

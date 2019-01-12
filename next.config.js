@@ -1,5 +1,4 @@
-
-const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
+const withBundleAnalyzer = require('@zeit/next-bundle-analyzer')
 
 module.exports = withBundleAnalyzer({
   // hot module replacement cache (dev only)
@@ -16,13 +15,12 @@ module.exports = withBundleAnalyzer({
   bundleAnalyzerConfig: {
     browser: {
       analyzerMode: 'static',
-      reportFilename: './bundles/client.html'
-    }
+      reportFilename: './bundles/client.html',
+    },
   },
 
   assetPrefix: '',
   webpack: (config, { dev, isServer, defaultLoaders }) => {
-
-    return config;
+    return config
   },
-});
+})

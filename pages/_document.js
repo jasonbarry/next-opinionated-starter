@@ -11,7 +11,7 @@ type Context = {
   renderPage: void => Object, // a callback that executes the actual React rendering logic (synchronously)
   req: Object, // HTTP request object (server only)
   res: Object, // HTTP response object (server only)
-};
+}
 
 export default class extends Document {
   static getInitialProps({ renderPage, req }: Context) {

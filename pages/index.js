@@ -1,19 +1,18 @@
 // @flow
 import * as React from 'react'
 
-type Props = {
-  status: ?number,
-};
+// components
+import Header from 'Components/Header'
 
-export default class Index extends React.Component<Props> {
-  static getInitialProps({ res, err }: { err: Object, res: Object }) {
-    //
+export default class Index extends React.Component<*> {
+  static getInitialProps() {
+    return {}
   }
 
   render() {
     return (
       <section>
-        <h1>Home</h1>
+        <Header>Home</Header>
       </section>
     )
   }

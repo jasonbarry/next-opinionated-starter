@@ -23,11 +23,11 @@
   "scripts": {
     "analyze": "BUNDLE_ANALYZE=browser yarn build",
     "build": "NODE_ENV=production next build",
-    "dev": "NODE_ENV=development && yarn serve",
+    "dev": "NODE_ENV=development node server.js",
     "libdefs": "flow-typed install --overwrite",
-    "lint": "eslint ./src/**/*.js ./src/**/*.jsx ./pages/** --ext jsx --ext js --cache --ignore-path .gitignore",
-    "pretty": "prettier --write './src/**/*.{js,jsx}' --ignore-path .gitignore",
-    "serve": "node server.js",
+    "lint": "eslint '**/*.{js,jsx}' --cache --ignore-path .prettierignore",
+    "pretty": "prettier --write '**/*.{js,jsx}'",
+    "serve": "NODE_ENV=production node server.js",
     "test": "NODE_ENV=test jest",
     "test:full": "yarn flow && yarn lint && yarn test"
   },
@@ -49,6 +49,7 @@
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
+    "eslint-import-resolver-babel-module": "5.0.0-beta.0",
     "eslint-plugin-compat": "^2.6.3",
     "eslint-plugin-flowtype": "^3.2.1",
     "eslint-plugin-import": "^2.14.0",
