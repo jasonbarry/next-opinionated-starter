@@ -1,0 +1,18 @@
+[libs]
+flow-typed/
+
+[ignore]
+.*/.next/.*
+.*/node_modules/*.
+.*/static/.*
+
+[options]
+emoji=true
+suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line
+module.file_ext=.js
+module.file_ext=.jsx
+# webpack resolve aliases for absolute imports
+module.name_mapper='^API/\(.*\)$' -> '<PROJECT_ROOT>/app/src/api/\1'
+module.name_mapper='^Components/\(.*\)$' -> '<PROJECT_ROOT>/app/src/components/\1'
+module.name_mapper='^Interfaces/\(.*\)$' -> '<PROJECT_ROOT>/app/src/interfaces/\1'
+module.name_mapper='^Utils/\(.*\)$' -> '<PROJECT_ROOT>/app/src/utils/\1'
