@@ -29,7 +29,7 @@
     "pretty": "prettier --write '**/*.{js,jsx}'",
     "serve": "NODE_ENV=production node server.js",
     "test": "NODE_ENV=test jest",
-    "test:full": "yarn flow && yarn lint && yarn test"
+    "test:full": "yarn flow && yarn lint"
   },
   "dependencies": {
     "compression": "^1.7.3",
