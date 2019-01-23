@@ -1,5 +1,5 @@
-// flow-typed signature: a27f0bb685d654276a1c5f31465274ce
-// flow-typed version: 9d82549796/next_v7.x.x/flow_>=v0.53.x
+// flow-typed signature: 19ee28f7d4b677b60b9363013345f9cc
+// flow-typed version: 5895afac32/next_v7.x.x/flow_>=v0.53.x
 
 declare module "next" {
   declare type RequestHandler = (
@@ -66,6 +66,13 @@ declare module "next" {
 
 declare module "next/head" {
   declare module.exports: Class<React$Component<any, any>>;
+}
+
+declare module "next/config" {
+  declare module.exports: () => {
+    publicRuntimeConfig: { [string]: string },
+    serverRuntimeConfig: { [string]: string }
+  };
 }
 
 declare type URLObject = {
