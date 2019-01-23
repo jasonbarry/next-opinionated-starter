@@ -1,10 +1,12 @@
-FROM mhart/alpine-node:10.14.1
+FROM mhart/alpine-node:10.15
 
 # Build arguments that need to be present for build phase
 # ARG DROP_CONSOLE
 
 # Environment variables that need to be present for deploy phase
 # ENV DROP_CONSOLE=$DROP_CONSOLE
+
+ENV NODE_ENV production
 
 # Create directories all the way up to app
 RUN mkdir -p /usr/src/app
