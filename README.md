@@ -1,7 +1,5 @@
 # next-opinionated-starter
 
-hi
-
 The project scaffolds out an opinionated front-end stack. Fork it when starting a new project to hit the ground running. 
 
 ## Features
