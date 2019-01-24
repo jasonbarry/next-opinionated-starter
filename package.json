@@ -32,6 +32,8 @@
     "test:full": "yarn flow && yarn lint"
   },
   "dependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@babel/plugin-transform-flow-strip-types": "^7.2.3",
     "@babel/preset-flow": "^7.0.0",
     "@zeit/next-bundle-analyzer": "^0.1.2",

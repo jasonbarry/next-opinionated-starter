@@ -17,6 +17,8 @@ module.exports = api => {
       ],
       'react-html-attrs',
       '@babel/transform-flow-strip-types',
+      '@babel/plugin-proposal-nullish-coalescing-operator',
+      '@babel/plugin-proposal-optional-chaining',
     ],
   }
 }
