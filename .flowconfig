@@ -8,6 +8,8 @@ flow-typed/
 
 [options]
 emoji=true
+esproposal.optional_chaining=enable
+esproposal.nullish_coalescing=enable
 suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line
 module.file_ext=.js
 module.file_ext=.jsx
