@@ -20,7 +20,7 @@ module.exports = withBundleAnalyzer({
   },
 
   assetPrefix: '',
-  webpack: (config) => {
+  webpack: config => {
     return config
   },
 })
